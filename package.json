@@ -1,0 +1,19 @@
+{
+  "name": "sunnyside-agency-landing-page-main",
+  "version": "1.0.0",
+  "description": "Sunny Side agency main landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass"
+  ],
+  "author": "Dinton Harold",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.2"
+  }
+}

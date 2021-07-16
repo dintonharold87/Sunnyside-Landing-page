@@ -1,0 +1,40 @@
+.menu{
+    background:#3dbeff;
+    a{
+        color: #ffffff;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+    }
+    li{
+        padding:0 2rem
+    }
+}
+.contact-btn{
+    background: #ffffff;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    border:none;
+
+}
+.heading-section{
+    position: relative;
+    background: #3dbeff;
+    &__heading{
+        font-weight: 900;
+        font-family: 'Fraunces', serif;
+    }
+    &__img{ 
+
+        &--arrow{
+            height: 10rem;
+            width:5rem;
+            position: absolute;
+            top:30%;
+            left:50%;
+            transform: translate(-50%,-30%);
+        }
+        
+
+    }
+    
+}
