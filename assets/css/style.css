@@ -10313,6 +10313,19 @@ fieldset:disabled .btn {
   transform: translate(-50%, -30%);
 }
 
+.design {
+  position: relative;
+}
+
+.design__message {
+  position: absolute;
+  top: 50%;
+}
+
+.design__message--one {
+  left: 50%;
+}
+
 * {
   padding: 0;
   margin: 0;
