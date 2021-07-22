@@ -10,15 +10,25 @@
     }
 }
 .contact-btn{
+    color:black;
     background: #ffffff;
     font-weight: 700;
     font-family: 'Fraunces', serif;
     border:none;
 
 }
+.contact-btn:hover{
+    color:#ffffff;
+    background-color: rgb(121, 197, 235);
+}
 .heading-section{
+    height:calc(100vh - 0.63vh);
     position: relative;
     background: #3dbeff;
+    background-image: url('../../assets/images/desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     &__heading{
         font-weight: 900;
         font-family: 'Fraunces', serif;
@@ -26,15 +36,41 @@
     &__img{ 
 
         &--arrow{
-            height: 10rem;
-            width:5rem;
+            height: 8rem;
+            width:3rem;
             position: absolute;
-            top:30%;
+            top:50%;
             left:50%;
-            transform: translate(-50%,-30%);
+            transform: translate(-50%,-50%);
         }
         
 
     }
     
 }
+@include media-breakpoint-down(sm) { 
+    .heading-section{
+    height: 100vh;
+    position: relative;
+    
+    background-image: url('../../assets/images/mobile/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    &__img{ 
+
+        &--arrow{
+            height: 4rem;
+            width:1rem;
+            position: absolute;
+            top:70%;
+            left:50%;
+            transform: translate(-50%,-70%);
+        }
+        
+
+    }
+    
+}
+ }

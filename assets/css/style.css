@@ -10288,15 +10288,26 @@ fieldset:disabled .btn {
 }
 
 .contact-btn {
+  color: black;
   background: #ffffff;
   font-weight: 700;
   font-family: 'Fraunces', serif;
   border: none;
 }
 
+.contact-btn:hover {
+  color: #ffffff;
+  background-color: #79c5eb;
+}
+
 .heading-section {
+  height: calc(100vh - 0.63vh);
   position: relative;
   background: #3dbeff;
+  background-image: url("../../assets/images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .heading-section__heading {
@@ -10305,25 +10316,113 @@ fieldset:disabled .btn {
 }
 
 .heading-section__img--arrow {
-  height: 10rem;
-  width: 5rem;
+  height: 8rem;
+  width: 3rem;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -50%);
 }
 
-.design {
+@media (max-width: 575.98px) {
+  .heading-section {
+    height: 100vh;
+    position: relative;
+    background-image: url("../../assets/images/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .heading-section__img--arrow {
+    height: 4rem;
+    width: 1rem;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
+}
+
+.brand--heading h2, .brand--heading .h2 {
+  font-weight: 900;
+  font-family: 'Fraunces', serif;
+}
+
+.brand--heading p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  color: #5a636c;
+}
+
+.brand--image {
+  display: block;
+  background: #fad400;
+}
+
+.design__one {
   position: relative;
 }
 
-.design__message {
+.design__one__heading {
   position: absolute;
   top: 50%;
+  left: 50%;
 }
 
-.design__message--one {
+.design__two {
+  position: relative;
+}
+
+.design__two__heading {
+  position: absolute;
+  top: 50%;
   left: 50%;
+}
+
+.footer {
+  background: #458c7e;
+  color: #25564b;
+}
+
+.footer--sitemap a {
+  color: #25564b;
+  margin: left 2rem;
+  text-decoration: none;
+}
+
+.footer--sitemap a:hover {
+  color: #fff;
+}
+
+.footer--icons a {
+  color: #25564b;
+  text-decoration: none;
+}
+
+.footer--icons a:hover {
+  color: #fff;
+}
+
+.footer--attribution {
+  background: #25564b;
+  color: #458c7e;
+  font-size: 0.75rem;
+}
+
+.footer--attribution a {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.audience--heading h2, .audience--heading .h2 {
+  font-weight: 900;
+  font-family: 'Fraunces', serif;
+}
+
+.audience--heading p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  color: #5a636c;
 }
 
 * {
@@ -10331,14 +10430,5 @@ fieldset:disabled .btn {
   margin: 0;
   box-sizing: border-box;
   font-size: 18px;
-  color: #fe7867;
-  color: #fad400;
-  color: #25564b;
-  color: #23303e;
-  color: #5a636c;
-  color: #818498;
-  color: #a7abae;
-  color: #ffffff;
-  color: #3dbeff;
 }
 /*# sourceMappingURL=style.css.map */
