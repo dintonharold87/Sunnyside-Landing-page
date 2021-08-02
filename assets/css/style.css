@@ -10297,7 +10297,7 @@ fieldset:disabled .btn {
 
 .contact-btn:hover {
   color: #ffffff;
-  background-color: #79c5eb;
+  background-color: #86c9eb;
 }
 
 .heading-section {
@@ -10354,29 +10354,75 @@ fieldset:disabled .btn {
   color: #5a636c;
 }
 
+.brand--heading h6, .brand--heading .h6 {
+  display: inline-block;
+  font-weight: 900;
+  font-family: 'Fraunces', serif;
+}
+
+.brand--heading h6:hover, .brand--heading .h6:hover {
+  border-bottom: 5px solid #fad400;
+}
+
 .brand--image {
   display: block;
   background: #fad400;
 }
 
 .design__one {
+  background-image: url("../../assets/images/desktop/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 
 .design__one__heading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  padding-top: 20rem;
+  color: #25564b;
+}
+
+.design__one__heading h3, .design__one__heading .h3 {
+  font-weight: 900;
+  font-family: 'Fraunces', serif;
+}
+
+.design__one__heading p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
 }
 
 .design__two {
-  position: relative;
+  background-image: url("../../assets/images/desktop/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .design__two__heading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  padding-top: 20rem;
+  color: #374c62;
+}
+
+.design__two__heading h3, .design__two__heading .h3 {
+  font-weight: 900;
+  font-family: 'Fraunces', serif;
+}
+
+.design__two__heading p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+@media (max-width: 767.98px) {
+  .design__one {
+    background-image: url("../../assets/images/mobile/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .design__two {
+    background-image: url("../../assets/images/mobile/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .footer {
@@ -10423,6 +10469,50 @@ fieldset:disabled .btn {
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
   color: #5a636c;
+}
+
+.audience--heading h6, .audience--heading .h6 {
+  display: inline-block;
+  font-weight: 900;
+  font-family: 'Fraunces', serif;
+}
+
+.audience--heading h6:hover, .audience--heading .h6:hover {
+  border-bottom: 5px solid #fe7867;
+}
+
+.audience--heading--image {
+  display: block;
+  background: #fe7867;
+}
+
+.testimonials {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: rgba(167, 171, 174, 0.3);
+}
+
+.testimonials--heading {
+  font-weight: 900;
+  font-family: 'Fraunces', serif;
+  color: #a7abae;
+}
+
+.testimonials--about {
+  color: #5a636c;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+.testimonials--name {
+  font-weight: 900;
+  font-family: 'Fraunces', serif;
+}
+
+.testimonials--title {
+  color: #818498;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
 }
 
 * {

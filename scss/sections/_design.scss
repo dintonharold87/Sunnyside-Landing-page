@@ -1,18 +1,55 @@
 .design{
     &__one{
+        background-image: url('../../assets/images/desktop/image-graphic-design.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+
         position: relative;
         &__heading{
-            position: absolute;
-            top: 50%;
-            left: 50%;
+            padding-top:20rem;
+            color: hsl(167, 40%, 24%);
+            h3{
+                font-weight: 900;
+                font-family: 'Fraunces', serif;
+            }
+            p{
+                font-family: 'Barlow', sans-serif;
+                font-weight: 600;
+            }
         }
     }
     &__two{
-        position: relative;
+        background-image: url('../../assets/images/desktop/image-photography.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         &__heading{
-            position: absolute;
-            top: 50%;
-            left: 50%;
+            padding-top:20rem;
+            
+            color:  #374c62;
+            h3{
+                font-weight: 900;
+                font-family: 'Fraunces', serif;
+            }
+            p{
+                font-family: 'Barlow', sans-serif;
+                font-weight: 600;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md){
+    .design{
+        &__one{
+        background-image: url('../../assets/images/mobile/image-graphic-design.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        &__two{
+        background-image: url('../../assets/images/mobile/image-photography.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         }
     }
 }

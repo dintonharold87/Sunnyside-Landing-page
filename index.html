@@ -22,7 +22,7 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////
                                START SECTION 1 - THE NAVBAR SECTION  
 /////////////////////////////////////////////////////////////////////////////////////////////-->
-    <nav class="navbar navbar-expand-lg navbar-dark  menu fixed-top shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark  menu sticky-top shadow">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="./assets/images/logo.svg" alt="" />
@@ -66,7 +66,7 @@
                                START SECTION 2 - THE HEADER SECTION  
 /////////////////////////////////////////////////////////////////////////////////////////////-->
     <section class="heading-section">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row text-center">
           <div class="col-lg-12">
             <h1 class="heading-section__heading text-light mt-5">
@@ -87,20 +87,22 @@
     <section class="brand" id="brand">
       <div class="container-fluid">
         <div class="row g-0">
-          <div class="col-lg-6 col-md-6 col-sm-12 text-center brand--heading">
+          <div class="col-lg-6 col-md-12 col-sm-12 brand--heading order order-lg-1  order-sm-2"style="padding: 5.5rem;">
             <h2>Transform your brand</h2>
-            <p>
+            <p class="mt-4">
               We are a full-service creative agency specializing in helping
               brands grow fast. Engage your clients through compelling visuals
               that do most of the marketing for you.
             </p>
+            <h6 class="mt-4" style="cursor: pointer;">LEARN MORE</h6>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 brand--image">
+          <div class="col-lg-6 col-md-12 col-sm-12 brand--image  order-lg-2  order-sm-1">
             
             <img
               src="./assets/images/desktop/image-transform.jpg"
               alt=""
-              class="img-fluid"
+              class="img-fluid "
+            
             />
           </div>
         </div>
@@ -110,22 +112,23 @@
                                START SECTION 4 - AUDIENCE SECTION  
 /////////////////////////////////////////////////////////////////////////////////////////////-->
     <section class="audience" id="audience">
-      <div class="container">
-        <div class="row g-0 align-items-center">
-          <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="container-fluid">
+        <div class="row g-0 ">
+          <div class="col-lg-6 col-md-12 col-sm-12 audience--image ">
             <img
               src="./assets/images/desktop/image-stand-out.jpg"
               alt=""
               class="img-fluid"
             />
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 text-center audience--heading">
+          <div class="col-lg-6 col-md-12 col-sm-12  audience--heading"style="padding: 5rem;">
             <h2>Stand out to the right audience</h2>
-            <p>
+            <p class="mt-4">
               Using a collaborative formula of designers, researchers,
               photographers, videographers, and copywriters, we’ll build and
               extend your brand in digital places.
             </p>
+            <h6 class="mt-4" style="cursor: pointer;">LEARN MORE</h6>
           </div>
         </div>
       </div>
@@ -134,32 +137,24 @@
                                START SECTION 5 - DESIGN SECTION  
 /////////////////////////////////////////////////////////////////////////////////////////////-->
     <section class="design" id="design">
-      <div class="container">
-        <div class="row g-0">
-          <div class="col-lg-6 col-md-6 col-sm-12 text-center design__one">
-            <img
-              src="./assets/images/desktop/image-graphic-design.jpg"
-              alt=""
-              class="img-fluid"
-            />
-            <div class="design__one__heading">
-              <h3>Graphic design</h3>
-              <p>
+      <div class="container-fluid">
+        <div class="row g-0 ">
+          <div class="col-lg-6 col-md-12 col-sm-12  design__one">
+          
+            <div class="design__one__heading text-center px-5 me-5">
+              <h3 class="mb-3">Graphic design</h3>
+              <p class="mb-5 ">
                 Great design makes you memorable. We deliver artwork that
                 underscores your brand message and captures potential clients’
                 attention.
               </p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 text-center design__two">
-            <img
-              src="./assets/images/desktop/image-photography.jpg"
-              alt=""
-              class="img-fluid"
-            />
-            <div class="design__two__heading">
-              <h3>Photography</h3>
-              <p>
+          <div class="col-lg-6 col-md-12 col-sm-12  design__two px-5">
+            
+            <div class="design__two__heading text-center ms-5">
+              <h3 class="mb-3 ">Photography</h3>
+              <p class="mb-5 ">
                 Increase your credibility by getting the most stunning,
                 high-quality photos that improve your business image.
               </p>
@@ -171,36 +166,36 @@
     <!-- ////////////////////////////////////////////////////////////////////////////////////////
                                START SECTION 6 - TESTIMONIALS SECTION  
 /////////////////////////////////////////////////////////////////////////////////////////////-->
-    <section class="testimonials" id="testimonials">
-      <div class="container">
-        <div class="row">
-          <h2 class="text-center">CLIENT TESTIMONIALS</h2>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="./assets/images/image-emily.jpg" alt="" />
-            <p>
+    <section class="" id="testimonials">
+      <div class="container-fluid">
+        <div class="row testimonials"> 
+          <h2 class="text-center mb-5 testimonials--heading">CLIENT TESTIMONIALS</h2>
+          <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+            <img src="./assets/images/image-emily.jpg" alt="" class="rounded-circle mb-5" />
+            <p class="testimonials--about" >
               We put our trust in Sunnyside and they delivered, making sure our
               needs were met and deadlines were always hit.
             </p>
-            <p>Emily R.</p>
-            <p>Marketing Director</p>
+            <p class="testimonials--name">Emily R.</p>
+            <p class="testimonials--title">Marketing Director</p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="./assets/images/image-thomas.jpg" alt="" />
-            <p>
+          <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+            <img src="./assets/images/image-thomas.jpg" alt="" class="rounded-circle mb-5"/>
+            <p class="testimonials--about">
               Sunnyside’s enthusiasm coupled with their keen interest in our
               brand’s success made it a satisfying and enjoyable experience.
             </p>
-            <p>Thomas S.</p>
-            <p>Chief Operating Officer</p>
+            <p class="testimonials--name">Thomas S.</p>
+            <p class="testimonials--title">Chief Operating Officer</p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="./assets/images/image-jennie.jpg" alt="" />
-            <p>
+          <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+            <img src="./assets/images/image-jennie.jpg" alt="" class="rounded-circle mb-5"/>
+            <p class="testimonials--about">
               Incredible end result! Our sales increased over 400% when we
               worked with Sunnyside. Highly recommended!
             </p>
-            <p>Jennie F.</p>
-            <p>Business Owner</p>
+            <p class="testimonials--name">Jennie F.</p>
+            <p class="testimonials--title">Business Owner</p>
           </div>
         </div>
       </div>
@@ -210,7 +205,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////-->
     <section class="gallery" id="gallery">
       <div class="container-fluid p-0">
-        <div class="row g-0">
+        <div class="row g-0 flex-md-nowrap">
           <div class="col-lg-3 col-md-3 col-sm-6">
             <img
               src="./assets/images/desktop/image-gallery-milkbottles.jpg"
